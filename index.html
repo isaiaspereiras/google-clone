@@ -1,97 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>Google</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,  user-scalable=0, initial-scale=1.0">
 		<meta http-equiv="X-UA-compatible" content="IE=edge">
-		<!-- Links CSS3 -->
-		<link rel="stylesheet" type="text/css" href="assets/css3/style.css">
-		<!-- Icon sup -->
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/icons/google.png" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css3/style.css" type="text/css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<title>Google</title>
 	</head>
 	<body>
-		<div class="container-geral">
-			<!-- Cabeçalho com login -->
-			<header>
-				<div class="nav-bar">
-					<nav>
-						<ul>
-							<li>
-								<a href="">Gmail</a>
-							</li>
-							<li>
-								<a href="">Images</a>
-							</li>
-							<li id="img-bar">
-								<a href="">
-									<img src="assets/icons/point-menu.png" alt="Tês linhas horizontais com três pontos em cada linha"/>
-								</a>
-							</li>
-							<li class="login-bar">
-								<a href="">Fazer login</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+		<header>
+			<div class="titulos">
+				<ul>
+					<li><a href="#">Gmail</a></li>
+					<li><a href="#">Imagens</a></li>
+					<li class="menu-bolinhas"><a href="#"><img src="assets/icons/point-menu.png" alt="Menu bolinhas"></a></li>
+					<li class="foto-perfil"><a href="#"><img src="assets/icons/itsme.jpg" alt="Foto do perfil"></a></li>
+				</ul>
+			</div>
+		</header>
+		<aside>
+			<div>
+				<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+			</div>
+		</aside>
+		<main>
 			<section>
-				<div>
-					<img src="https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.3-law.gif" alt="Logo do Google com decoração" title="Festividade de final do ano 2022" />
-				</div>
-			</section>
-			<section>
-				<form method="POST">
-						<label class="label-left">
-							<img src="assets/icons/search.png" alt="Lupa de pesquisa" />
-						</label>
-						<input type="text" name="search" id="searchg" autofocus="on">
-						<label class="label-right">
-							<img src="assets/icons/keyboard.png" alt="Teclado de computador" />
-						</label>
-						<label class="label-lens">
-							<img src="assets/icons/google-lens.png" alt="Câmera com as cores do Google"/>
-						</label>
+				<form action="formulario.php" method="get" autocomplete="on">
+					<div class="pesquisa">
+						<span class="material-symbols-outlined search1">
+							search
+						</span>
+						<input type="text" autofocus autocomplete="given-name">
+						<span class="material-symbols-outlined">
+							keyboard
+						</span>
+						<span class="material-symbols-outlined">
+							mic
+						</span>
+						<span class="material-symbols-outlined">
+							center_focus_strong
+						</span>
+					</div>
+					<div class="bar-button">
+						<a href="#">Pesquisa Google</a>
+						<a href="#">Estou com sorte</a>
+					</div>
 				</form>
-			</section>
-			<section>
-				<div class="buttons">
-					<form>
-						<input type="submit" name="pesquisa google" value="Pesquisa Google">
-						<input type="submit" name="estou com sorte" value="Estou com sorte">
-					</form>
+				<div class="referencia">
+					<a href="#">Edson Arantes do Nascimento (Pelé), 1940-2022</a>
 				</div>
 			</section>
-			<section>
-				<div class="desc-google">
-					Disponibilizado pelo Google em: <a href="">English</a>
-				</div>
-			</section>
-			<footer>
-				<div class="brasil">
-					Brasil
-				</div>
-				<div class="footer-bottom">
-					<div class="left">
-						<ul>
-							<li><a href="">Sobre</a></li>
-							<li><a href="">Publicidade</a></li>
-							<li><a href="">Negócios</a></li>
-							<li><a href="">Como funciona a Pesquisa</a></li>
-						</ul>
-					</div>
-					<div class="right">
-						<ul>
-							<li><a href="">Privacidade</a></li>
-							<li><a href="">Termos</a></li>
-							<li><a href="">Configurações</a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
+		</main>
+		<footer>
+			<div class="brasil">
+				<p>Brasil</p>
+			</div>
+			<div class="footer">
+				<a href="">Sobre</a>
+				<a href="">Publicidade</a>
+				<a href="">Negocios</a>
+				<a href="">Como Funciona a Pesquisa</a>
+				<a href="">Privacidade</a>
+				<a href="">Termos</a>
+				<a href="">Configuracoes</a>
+			</div>
+		</footer>
 	</body>
 </html>
