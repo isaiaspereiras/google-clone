@@ -1,0 +1,6 @@
+/* Adicionan tablet e notebook */
+@media (min-width: 650px) {
+    section form .pesquisa {
+        max-width: 590px;
+    }
+}
